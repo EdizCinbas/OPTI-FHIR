@@ -15,7 +15,7 @@ search = Observation.where(struct={'code': 'http://loinc.org|8302-2'})
 
 
 # Run through obsevations to find 'patientLimit' amount of patients and print heights
-patientLimit = 10
+patientLimit = 100
 
 observations = {}
 patient_counter = 0
