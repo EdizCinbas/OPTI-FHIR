@@ -46,7 +46,6 @@ while bundle is not None:
     else:
         break
 
-# Loop through the latest observations
 for patient_id, obs in observations.items():
 
     patient = Patient.read(patient_id, smart.server)
