@@ -58,3 +58,14 @@ for patient_id, obs in observations.items():
     age = datetime.now().year - birth_date.year
 
     print(f"Patient: {patient_name}, Age: {age}, Latest Height: {obs_value}")
+
+
+# Below is the formulas to calculate the optimal parameters
+
+# Function to calculate desk height 
+def calculate_desk_height(person_height):
+    return -0.00231481 * person_height**2 + 1.27315 * person_height - 82.537
+
+# Function to calculate chair height 
+def calculate_chair_height(person_height):
+    return 0.0022096 * person_height**2 - 0.447702 * person_height + 57.0088
